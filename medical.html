@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Checks</title>
+    <link rel="stylesheet" href="medical.css">
+    <script src="medical.js" defer></script>
+</head>
+
+<body>
+    <a class="heading" href="INDEX.HTML">🩸LifeDrop</a>
+    <p style="margin-left: 49px;">Donate Blood Save Lifes</p>
+    <ul class="navbar">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="Appointment.html">Appointment Slots</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="medical.html">Medical checks</a></li>
+        <li><a href="collection.html">Collection queues</a></li>
+    </ul>
+    <div class="medical-container">
+
+        <h1>Medical Screening</h1>
+        <p>Donor health assessment record</p>
+
+        <div class="donor-info">
+            <h3>Donor Information</h3>
+
+            <label>Select Donor</label>
+            <select id="donorSelect">
+                <option value="">Select Donor</option>
+            </select>
+
+            <p id="donorDetails">Select a donor to see details.</p>
+        </div>
+
+        <h3>Donor Eligibility Checklist</h3>
+
+        <div class="checklist">
+
+            <label>
+                <input type="checkbox" id="ageCheck">
+                Age is between 18 and 65 years
+            </label>
+
+            <label>
+                <input type="checkbox" id="weightCheck">
+                Weight is 50 kg or above
+            </label>
+
+            <label>
+                <input type="checkbox" id="illnessCheck">
+                No fever / illness in the last 14 days
+            </label>
+
+            <label>
+                <input type="checkbox" id="tattooCheck">
+                No tattoo or piercing in the last 6 months
+            </label>
+
+            <label>
+                <input type="checkbox" id="hemoglobinCheck">
+                Hemoglobin level is normal (checked by staff)
+            </label>
+
+            <label>
+                <input type="checkbox" id="donationCheck">
+                Last donation was more than 3 months ago (or first time)
+            </label>
+
+        </div>
+
+        <label class="remarks-label">Medical Staff Remarks</label>
+        <textarea id="medicalRemarks" placeholder="Enter remarks..."></textarea>
+
+
+        <label class="status-label">Screening Status</label>
+
+        <select id="screeningStatus" required>
+            <option value="">Select Status</option>
+            <option value="Cleared">Cleared</option>
+            <option value="Not Cleared">Not Cleared</option>
+            <option value="Pending">Pending</option>
+        </select>
+
+        <button type="button" class="register-btn" id="saveScreening">
+            Save Screening Record
+        </button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+    <a class="heading" href="INDEX.HTML">🩸LifeDrop</a>
+    <p style="margin-left: 49px;">Donate Blood Save Lifes</p>
+
+    <ul class="navbar">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="Appointment.html">Appointment Slots</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="medical.html">Medical checks</a></li>
+        <li><a href="collection.html">Collection queues</a></li>
+    </ul>
+
+    
+    <section class="stats-container">
+
+        <div class="stat-card registered">
+            <div class="card-icon">👥</div>
+            <div>
+                <p>Total Registered</p>
+                <h2 id="totalRegistered">1</h2>
+            </div>
+        </div>
+
+        <div class="stat-card booked">
+            <div class="card-icon">📅</div>
+            <div>
+                <p>Slots Booked</p>
+                <h2 id="slotsBooked">0</h2>
+            </div>
+        </div>
+
+        <div class="stat-card eligible">
+            <div class="card-icon">✓</div>
+            <div>
+                <p>Eligible Donors</p>
+                <h2 id="eligibleDonors">1</h2>
+            </div>
+        </div>
+
+    </section>
+    <section class="donors-section">
+
+        <div class="section-header">
+            <h2>All Donors Overview</h2>
+            <input type="search" id="searchDonor" placeholder="Search donor...">
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                   
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>Slot</th>
+                        <th>Eligibility</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="donorTable">
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

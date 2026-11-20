@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    color: black;
+}
+.heading{
+    color: red;
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 6%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(52, 50, 50);
+    align-items: center;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.appointment-container {
+    width: 500px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.appointment-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.appointment-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.appointment-container h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.appointment-container input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.slot {
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.slot:has(input:checked) {
+    background-color: #fce7e7;
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.slot input {
+    accent-color: #dc2626;
+}
+
+.appointment-container .register-btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.register-btn{
+    background-color: #dc2626;
+    transition: 0.3s;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    background-color: #991b1b;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .slots {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#donorSelect {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+#donorSelect:focus {
+    border-color: #e53935;
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.3);
+}

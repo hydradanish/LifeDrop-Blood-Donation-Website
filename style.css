@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    color: black;
+}
+.heading{
+    color: red;
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 6%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(52, 50, 50);
+    align-items: center;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.donateblood{
+    padding: 60px 60px 10px 60px;
+    margin-left: 70px; 
+    font-weight: 900px;
+    font-size: 50px;
+}
+.save{
+    color: red;
+    font-size: 40px;
+    margin-left: 130px;
+    margin-top: 0px;
+}
+.para1{
+    margin: 20px 0px 0px 130px;
+    font-weight: lighter;
+    font-size: 20px;
+
+}
+.register{
+    margin : 30px 0px 0px 130px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.register:hover{
+    background-color: #991b1b;
+}
+.donation{
+    color: red;
+    font-weight: bold;
+    margin: 30px 0px 0px 129px;
+    font-size: 20px;
+}
+.date{
+  margin: 0px 0px 0px 129px;
+    font-size: 15px;
+}
+.venue{
+    margin: 0px 0px 0px 129px;
+}

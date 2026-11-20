@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    color: black;
+}
+.heading{
+    color: red;
+    font-size: 40px;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 6%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(52, 50, 50);
+    align-items: center;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.dore{
+    align-items: center;
+    font-weight: bold;
+    margin: 40px 0px 0px 600px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Registration Page */
+
+.registration-container {
+    width: 450px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.registration-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.registration-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.registration-container label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.registration-container input,
+.registration-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.registration-container input:focus,
+.registration-container select:focus {
+    border-color: #dc2626;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row div {
+    width: 50%;
+}
+
+.registration-container .register-btn {
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row div {
+        width: 100%;
+    }
+}
+.register-btn{
+    background-color: #dc2626;
+    transition: 0.3s;
+    padding: 8px;
+
+}
+.register-btn:hover{
+    background-color: #991b1b;
+}
+

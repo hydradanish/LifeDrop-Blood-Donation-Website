@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection queues</title>
+    <link rel="stylesheet" href="collection.css">
+    <script src="collection.js" defer></script>
+</head>
+
+<body>
+    <a class="heading" href="INDEX.HTML">🩸LifeDrop</a>
+    <p style="margin-left: 49px;">Donate Blood Save Lifes</p>
+    <ul class="navbar">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="Appointment.html">Appointment Slots</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="medical.html">Medical checks</a></li>
+        <li><a href="collection.html">Collection queues</a></li>
+    </ul>
+    <div class="queue-container">
+
+        <h1>Collection Queue</h1>
+        <p>Manage donor waiting and collection status.</p>
+
+        
+        <div class="queue-summary">
+
+            <div class="queue-card">
+                <h2 id="totalDonors">0</h2>
+                <p>Total Donors</p>
+            </div>
+
+            <div class="queue-card">
+                <h2 id="waitingDonors"></h2>
+                <p>Waiting</p>
+            </div>
+
+            <div class="queue-card">
+                <h2 id="completedDonors">0</h2>
+                <p>Completed</p>
+            </div>
+
+        </div>
+
+        
+        <h3>Donor Queue</h3>
+
+        <div class="queue-list" id="queueList">
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

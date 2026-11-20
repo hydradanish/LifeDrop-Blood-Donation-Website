@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Slots</title>
+    <link rel="stylesheet" href="appointment.css">
+    <script src="appointment.js" defer></script>
+</head>
+
+<body>
+    <a class="heading" href="INDEX.HTML">🩸LifeDrop</a>
+    <p style="margin-left: 49px;">Donate Blood Save Lifes</p>
+    <ul class="navbar">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="Appointment.html">Appointment Slots</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="medical.html">Medical checks</a></li>
+        <li><a href="collection.html">Collection queues</a></li>
+    </ul>
+    <div class="appointment-container">
+
+        <h1>Book Your Slot</h1>
+        <p>Select your preferred date and time.</p>
+
+        <form id="appointmentForm">
+            <label>Select Donor</label>
+
+            <select id="donorSelect" required>
+                <option value="">Choose Donor</option>
+            </select>
+
+            <label>Select Date</label>
+            <input type="date" id="appointmentDate" required>
+
+            <h3>Select Time Slot</h3>
+
+            <div class="slots">
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="9-10" required>
+                    09:00 AM - 10:00 AM
+                </label>
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="10-11">
+                    10:00 AM - 11:00 AM
+                </label>
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="11-12">
+                    11:00 AM - 12:00 PM
+                </label>
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="12-1">
+                    12:00 PM - 01:00 PM
+                </label>
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="2-3">
+                    02:00 PM - 03:00 PM
+                </label>
+
+                <label class="slot">
+                    <input type="radio" name="slot" value="3-4">
+                    03:00 PM - 04:00 PM
+                </label>
+
+            </div>
+
+            <button type="submit" class="register-btn">
+                Confirm Appointment
+            </button>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>

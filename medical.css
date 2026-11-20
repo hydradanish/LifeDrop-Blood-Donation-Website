@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    color: black;
+}
+.heading{
+    color: red;
+    font-size: 40px;
+    
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 6%;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(52, 50, 50);
+    align-items: center;
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.medical-container {
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.medical-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.medical-container > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.donor-info {
+    background-color: #fce7e7;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.donor-info h3 {
+    margin-bottom: 10px;
+}
+
+.donor-info p {
+    margin: 8px 0;
+}
+
+.checklist {
+    margin-top: 15px;
+}
+
+.checklist label {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.checklist input {
+    accent-color: #dc2626;
+    margin-right: 8px;
+}
+
+.remarks-label,
+.status-label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.medical-container textarea,
+.medical-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.medical-container textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.medical-container .register-btn {
+    width: 100%;
+    margin-top: 25px;
+}
+.register-btn{
+    padding: 15px;
+    background-color: red;
+    transition: 0.3s;
+}
+.register-btn:hover{
+    background-color: rgb(250, 93, 93);
+}
